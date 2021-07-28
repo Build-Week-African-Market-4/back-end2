@@ -32,7 +32,7 @@ server.use('/api/market', restricted, marketRouter);
 
 server.get('/', (req, res, next) => {
     res.json({
-        api: 'up'
+        message: 'api up!'
     })
     next()
 });

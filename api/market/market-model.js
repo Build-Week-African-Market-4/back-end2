@@ -40,7 +40,7 @@ function findByCategory(category_name){
     .where({category_name})
 };
 
-function add(item){
+async function add(item){
     const seller = await findSellerByName(item.seller_name)
 	const categoryArr = await findCategoryByName(item.category_name)
 	const productArr = await findProductByName(item.product_name)
